@@ -5,7 +5,7 @@
   "main": "sharedb-codemirror.js",
   "scripts": {
     "test": "node_modules/.bin/mocha",
-    "test-cover": "node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha",
+    "test-cover": "node_modules/.bin/nyc node_modules/mocha/bin/_mocha",
     "start": "cd examples && \"../node_modules/.bin/webpack\" && node server.js"
   },
   "repository": {
@@ -24,12 +24,12 @@
   "devDependencies": {
     "codemirror": "^5.13.4",
     "express": "^4.13.4",
-    "istanbul": "^0.4.3",
-    "jsdom": "^3.1.2",
-    "mocha": "^2.4.5",
+    "jsdom": "^6.0.0",
+    "mocha": "^4.0.1",
+    "nyc": "14.1.1",
     "ot-text": "^1.0.1",
-    "sharedb": "^0.11.35",
-    "webpack": "^1.12.14",
+    "sharedb": "^1.0.0-beta.7",
+    "webpack": "^2.6.1",
     "ws": "^1.0.1"
   }
 }
