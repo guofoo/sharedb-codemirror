@@ -1,4 +1,4 @@
-# ShareDB-CodeMirror [![Build Status](https://secure.travis-ci.org/ejones/sharedb-codemirror.png)](http://travis-ci.org/ejones/sharedb-codemirror) [![Dependencies](https://david-dm.org/ejones/sharedb-codemirror.png)](https://david-dm.org/ejones/sharedb-codemirror) [![devDependency Status](https://david-dm.org/ejones/sharedb-codemirror/dev-status.png)](https://david-dm.org/ejones/sharedb-codemirror#info=devDependencies)
+# ShareDB-CodeMirror [![Build Status](https://secure.travis-ci.org/guofoo/sharedb-codemirror.png)](http://travis-ci.org/guofoo/sharedb-codemirror) [![Dependencies](https://david-dm.org/guofoo/sharedb-codemirror.png)](https://david-dm.org/guofoo/sharedb-codemirror) [![devDependency Status](https://david-dm.org/guofoo/sharedb-codemirror/dev-status.png)](https://david-dm.org/guofoo/sharedb-codemirror#info=devDependencies)
 CodeMirror bindings for ShareDB. Adapted from [@aslakhellesoy](https://github.com/aslakhellesoy)'s [share-codemirror](https://github.com/share/share-codemirror).
 
 ## Usage
