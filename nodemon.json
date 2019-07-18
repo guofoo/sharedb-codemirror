@@ -1,0 +1,21 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "node_modules",
+    "examples/build"
+  ],
+  "verbose": true,
+  "execMap": {
+    "js": "node --harmony"
+  },
+  "watch": [
+    "*.*"
+  ],
+  "events": {
+    "restart": "cd examples && \"../node_modules/.bin/webpack\""
+  },
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
