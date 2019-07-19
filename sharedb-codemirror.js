@@ -1,4 +1,4 @@
-var CODE_MIRROR_OP_SOURCE = 'CodeMirror';
+const CODE_MIRROR_OP_SOURCE = 'CodeMirror';
 
 /**
  * @constructor
@@ -57,18 +57,21 @@ ShareDBCodeMirror.attachDocToCodeMirror = function(shareDoc, codeMirror, options
       shareDoc.removeListener('op', shareDBOpListener);
     },
     onOp: function(op, source) {
+    console.log('onOp: received from: ', source);
+
       var docOp = [{p: [key], t: 'text', o: op}];
 
       if (verbose) {
         console.log('ShareDBCodeMirror: submitting op to doc:', docOp);
       }
 
-      shareDoc.submitOp(docOp, source);
+      shareDoc.submitOp(docOp, {source: CODE_MIRROR_OP_SOURCE});
       shareDBCodeMirror.assertValue(shareDoc.data[key]);
     }
   });
 
   function shareDBOpListener(op, source) {
+    console.log('shareDBOpListener: received from: ', source);
     for (var i = 0; i < op.length; i++) {
       var opPart = op[i];
 
